@@ -1,6 +1,6 @@
 = acts_as_awardable
 
-Description goes here.
+acts_as_awardable :on => [:col1, :col2, ...]
 
 == Note on Patches/Pull Requests
  
