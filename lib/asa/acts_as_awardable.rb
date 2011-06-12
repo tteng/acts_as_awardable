@@ -30,7 +30,7 @@ module ActsAsAwardable
           end
   
           def #{prefix}award_attributes= values_hash
-            result = if some_value.blank?
+            result = if values_hash.blank?
               {}
             else 
               transaction do
