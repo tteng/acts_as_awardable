@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{acts_as_awardable}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["tim.teng"]
-  s.date = %q{2011-06-12}
+  s.date = %q{2011-06-13}
   s.description = %q{assign awardable items like equips, props and fabaos etc, internal project usage only}
   s.email = %q{tim.rubist@gmail.com}
   s.extra_rdoc_files = [

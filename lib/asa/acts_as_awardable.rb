@@ -36,22 +36,12 @@ module ActsAsAwardable
                   #{prefix}award_attributes[award_type.to_s] = values
                 end
               end
+              values_hash
             end
+            self.send("#{col}=", result.to_json)
           end
         EOF
       end
-
-      module_eval <<-KOF
-
-        def after_validation
-          super
-          delegated_columns.each_with_index do |col,idx| 
-            prefix = (prefixes[idx].to_s + "_") if prefixes[idx]
-            self.send("#{col}=", @#{prefix}award_attributes.to_json)
-          end
-        end
-
-      KOF
 
     end
 
